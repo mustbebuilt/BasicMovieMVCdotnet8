@@ -1,8 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+@{
+    ViewData["Title"] = "Full Film List";
+    ViewData["PageHeading"] = "Full Film List";
+ }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="wrap">
+@foreach (var item in Model)
+{
+    <div class="filmThumb">
+        <p><a asp-controller="Home" asp-action="FilmDetails" asp-route-id="@item.FilmID">@item.FilmTitle</a></p>
+    </div>
+}
+</section>

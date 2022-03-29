@@ -17,7 +17,8 @@ namespace MyMVC6.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<Film> model = _context.Films.ToList();
+            return View(model);
         }
 
         public IActionResult Privacy()
@@ -38,6 +39,14 @@ namespace MyMVC6.Controllers
 
             return View(model);
 
+        }
+
+        [HttpGet]
+        public IActionResult FilmDetails(int id)
+        {
+            //List<Film> model = _context.Films.Find(FilmID);
+            Film model = _context.Films.Find(id);
+            return View(model);
         }
 
 
