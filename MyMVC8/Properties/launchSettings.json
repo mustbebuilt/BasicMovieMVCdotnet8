@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "MyMVC6": {
+    "MyMVC8": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

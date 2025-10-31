@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyMVC6.Models
+namespace MyMVC8.Models
 {
     public class Film
 

@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyMVC6.Models;
+using MyMVC8.Models;
 
 #nullable disable
 
-namespace MyMVC6.Migrations
+namespace MyMVC8.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace MyMVC6.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("MyMVC6.Models.Film", b =>
+            modelBuilder.Entity("MyMVC8.Models.Film", b =>
                 {
                     b.Property<int>("FilmID")
                         .ValueGeneratedOnAdd()

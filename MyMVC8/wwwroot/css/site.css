@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+}
+html, body{
+  /* add flex to make footer stick to bottom when content is short */
+  display:flex;
+  flex-direction: column;
+  min-height:100vh;
+
+}
+.container, footer{
+    width: 80%;
+    margin: auto;
+    flex:1; /* make container take available space */
+}
+header, footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+nav > menu{
+    list-style-type: none;
+    padding: 0 0 0 2vw;
+    display: flex;
+    gap:2vw;
+}
+nav > menu > li > a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+nav > menu > li > a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+}
+footer{
+    flex:0; /* prevent footer from growing */
+    margin-top:20px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #6c757d;
+}

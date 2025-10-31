@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace MyMVC6.Models
+namespace MyMVC8.Models
 {
     public class ApplicationDbContext : DbContext
     {

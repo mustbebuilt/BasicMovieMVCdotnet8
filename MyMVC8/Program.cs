@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MyMVC6.Models;
+using MyMVC8.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
